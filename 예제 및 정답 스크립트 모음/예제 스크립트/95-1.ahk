@@ -1,0 +1,1 @@
+﻿FileAppend("국가는 평생교육을 진흥하여야 한다.`n", "test.txt")

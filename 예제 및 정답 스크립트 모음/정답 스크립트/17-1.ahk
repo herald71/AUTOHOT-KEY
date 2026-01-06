@@ -1,0 +1,1 @@
+﻿MsgBox("현재 날짜: " A_Mon "월 " A_MDay "일`n현재 시간: " A_Hour "시 " A_Min "분 " A_Sec "초`n`n현재 실행중인 오토핫키 버전은 " A_AhkVersion "입니다.`n윈도우 버전 " A_OSVersion "에서 실행 중입니다.`n`n컴퓨터가 켜진지 " A_TickCount // 1000 // 60 "분 지났습니다.",,"Iconi")

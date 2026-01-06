@@ -1,0 +1,1 @@
+﻿ControlSendText("Type it", "Edit1", "Test Program")

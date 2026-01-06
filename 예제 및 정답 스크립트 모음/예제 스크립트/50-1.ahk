@@ -1,0 +1,1 @@
+﻿ControlSetText("Changed!", "Edit1", "Test Program")
