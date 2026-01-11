@@ -45,6 +45,7 @@
    - Ctrl+Alt+W: 쿠팡윙 로그인
    - Ctrl+Alt+M: 메이크샵 로그인
    - Ctrl+Alt+V: 네이버 스마트스토어 로그인
+   - Ctrl+Alt+I: Gemini 열기
    - Win+O: 올라 로그인
    - Win+T: EcountERP 로그인
 
@@ -100,7 +101,7 @@ F8::
     Loop  ; 무한 반복
     {
         Click  ; 현재 마우스 커서 위치에서 클릭
-        Sleep ClickInterval  ; 설정된 간격만큼 대기 (기본 100ms)
+        Sleep ClickInterval  ; 설정된 간격만큼 대기 (기본 gpt
         if !GetKeyState("F8", "P")  ; F8 키가 눌려있지 않으면
             break  ; 반복 종료
     }
@@ -193,7 +194,14 @@ F8::
     Run DefaultBrowser . " https://accounts.commerce.naver.com/login?url=https%3A%2F%2Fsell.smartstore.naver.com%2F%23%2Flogin-callback"  ; 네이버 스마트스토어 로그인 페이지 실행
 }
 
-; ===== 16. 상품소싱 메모장 템플릿 생성 =====
+; ===== 16. Gemini 실행 =====
+; Ctrl + Alt + I 키를 누르면 기본 브라우저로 Gemini를 엽니다
+^!i::
+{
+    Run DefaultBrowser . " https://gemini.google.com/gem/55fd2cc0b8b8"  ; Gemini 실행
+}
+
+; ===== 17. 상품소싱 메모장 템플릿 생성 =====
 ; Windows + M 키를 누르면 메모장을 최대화하여 실행하고 상품소싱용 템플릿을 자동으로 입력합니다
 #m::  ; Win + M
 {
@@ -210,7 +218,7 @@ F8::
     SendText "5. 연관 검색어 제안 해주세요"
 }
 
-; ===== 17. AI질문답변2 실행 =====
+; ===== 18. AI질문답변2 실행 =====
 ; Windows + C 키를 누르면 AI질문답변2 AutoHotkey 스크립트를 실행합니다
 ; 주의: 파일 경로가 변경되면 이 경로도 수정해야 합니다
 #c::
@@ -219,7 +227,7 @@ F8::
     return
 }
 
-; ===== 18. 거래명세서확인 실행 =====
+; ===== 19. 거래명세서확인 실행 =====
 ; Windows + I 키를 누르면 쿠팡 거래명세서 확인 프로그램을 실행합니다
 ; 주의: 파일 경로가 변경되면 이 경로도 수정해야 합니다
 #i::
@@ -228,21 +236,21 @@ F8::
     return
 }
 
-; ===== 19. 올라 로그인 실행 =====
+; ===== 20. 올라 로그인 실행 =====
 ; Windows + O 키를 누르면 기본 브라우저로 올라(Allra) 로그인 페이지를 엽니다
 #o::
 {
     Run DefaultBrowser . " https://www.allra.co.kr"  ; 올라 로그인 페이지 실행
 }
 
-; ===== 20. EcountERP 실행 =====
+; ===== 21. EcountERP 실행 =====
 ; Windows + T 키를 누르면 기본 브라우저로 EcountERP 로그인 페이지를 엽니다
 #t::
 {
     Run DefaultBrowser . " https://login.ecount.com/Login/"  ; EcountERP 로그인 페이지 실행
 }
 
-; ===== 21. Notion 실행 =====
+; ===== 22. Notion 실행 =====
 ; Windows + 1 키를 누르면 Notion 애플리케이션을 실행합니다
 ; 주의: Notion이 설치되어 있고 PATH에 등록되어 있어야 합니다
 #1::
@@ -251,7 +259,7 @@ F8::
     return
 }
 
-; ===== 22. Cursor AI 실행 =====
+; ===== 23. Cursor AI 실행 =====
 ; Windows + 2 키를 누르면 Cursor AI 코드 에디터를 실행합니다
 ; 주의: Cursor가 설치되어 있고 PATH에 등록되어 있어야 합니다
 #2::
@@ -260,7 +268,7 @@ F8::
     return
 }
 
-; ===== 23. Figma 실행 =====
+; ===== 24. Figma 실행 =====
 ; Windows + 4 키를 누르면 Figma 디자인 툴을 실행합니다
 ; 주의: Figma가 설치되어 있고 PATH에 등록되어 있어야 합니다
 #4::
