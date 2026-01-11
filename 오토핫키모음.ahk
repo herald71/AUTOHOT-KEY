@@ -138,7 +138,7 @@ F8::
 ; Ctrl + Alt + G 키를 누르면 기본 브라우저로 ChatGPT를 엽니다
 ^!g::
 {
-    Run DefaultBrowser . " https://chat.openai.com"  ; 기본 브라우저로 ChatGPT 실행
+    Run DefaultBrowser . " https://chatgpt.com/g/g-6956250d7c7c81919a910daab902b0d1-pro-mpt-peurompeuteu-gujohwa"  ; 기본 브라우저로 ChatGPT 실행
 }
 
 ; ===== 10. 파워포인트 실행 =====
